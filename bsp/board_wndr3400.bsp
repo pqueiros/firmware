@@ -1,0 +1,6 @@
+machine=wndr3400
+chipset=brcm47xx
+target=$builddir/$machine
+images=(
+        "openwrt-brcm47xx-mips74k-netgear-wndr3400-v1-squashfs.chk"
+       )

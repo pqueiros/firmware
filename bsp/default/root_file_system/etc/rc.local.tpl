@@ -49,6 +49,9 @@ case "$BOARD" in
     tl-mr3020)
         BOARD=tl-mr3020-v1
         ;;
+    "")
+        grep "Netgear WNDR3400 V1" /proc/cpuinfo  && BOARD=tl-wndr3400-v1
+        ;;
 esac
 
 if ! uci get board.model.name; then
